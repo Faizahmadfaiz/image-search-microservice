@@ -1,0 +1,25 @@
+{
+  "name": "image-search-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faizahmadfaiz/image-search-microservice.git"
+  },
+  "author": "Faiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faizahmadfaiz/image-search-microservice/issues"
+  },
+  "homepage": "https://github.com/Faizahmadfaiz/image-search-microservice#readme",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "mongoose": "^4.8.2",
+    "request": "^2.79.0"
+  }
+}
