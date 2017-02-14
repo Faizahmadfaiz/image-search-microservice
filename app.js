@@ -8,7 +8,7 @@ var mongoose = require('mongoose')
 var mLab = process.env.MONGOLAB_URI || 'mongodb://localhost/image_search_api';
 mongoose.connect(mLab);
 app.set('view engine', 'ejs');
-app.set('port', (process.env.port || 3000));
+app.set('port', (process.env.PORT || 3000));
 //MONGOOSE MODEL CONFIG
 var imageSchema = new mongoose.Schema({
   term: String,
@@ -39,6 +39,10 @@ function getImageData(options) {
     request(options, callback);
   });
 }
+
+app.get('/', function(req, res) {
+  res.render('index');
+});
 
 app.get('/api/imagesearch/:term', function(req, res) {
   var term = req.params.term;
